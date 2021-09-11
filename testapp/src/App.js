@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Temperature from './components/Temperature';
+import CustomizeImage from './components/CustomizeImage';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
       <Switch>
         <Route path="/temperature">
           <Temperature/>
+        </Route>
+        <Route path="/customize-image">
+          <CustomizeImage/>
         </Route>
       </Switch>
         </Router>

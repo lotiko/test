@@ -18,10 +18,8 @@ export class Temperature extends Component {
                     this.state.temp && (
                         (this.state.temp < 10 && <h4 className="t-blue">It's cold ❄️</h4>) ||
                         (this.state.temp > 9 && this.state.temp < 30 && <h4 className="t-blue">It's nice 🌼</h4>) ||
-                        <h4 className="t-blue">It's warm 🌞</h4>
-                        
-                )
-                   
+                        <h4 className="t-blue">It's warm 🌞</h4>       
+                    )  
                 }
             </div>
         )
