@@ -1,17 +1,21 @@
 import './App.css';
+
 import React from "react";
 import {
   BrowserRouter as Router,
+  Switch,
+  Route,
   Link
 } from "react-router-dom";
 
+import Temperature from './components/Temperature';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
       <Router>
+    
+      <header className="App-header">
       <nav>
-         
             <button>
               <Link to="/">Home</Link>
             </button>
@@ -20,12 +24,15 @@ function App() {
             </button>
             <button>
               <Link to="/customize-image">Customize Image</Link>
-            </button>
-          
+            </button>       
         </nav>
-        </Router>
       </header>
-    </div>
+      <Switch>
+        <Route path="/temperature">
+          <Temperature/>
+        </Route>
+      </Switch>
+        </Router>
   );
 }
 
